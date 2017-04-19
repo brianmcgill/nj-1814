@@ -1,0 +1,160 @@
+.main { position: relative; width:100%; max-width:740px; }
+
+#heightPlaceholder { height: 520px; }
+
+#wrapper {
+	position:absolute;
+	left: 1px;
+	top: 10px;
+	overflow:hidden;
+	width: 100%;
+	max-width: 740px;
+	height:500px;
+	z-index: 0;
+	cursor: col-resize;
+}
+
+#wrapper img {
+	position:absolute;
+	top:0;
+	width:100%;
+	height:auto;
+}
+
+.currentImg {
+	visibility:visible;
+	width:100%;
+}
+
+.otherImg {
+	visibility:hidden;
+	width:0;
+}
+
+#spinner {
+	position:absolute;
+	top: 150px;
+	left: 250px;
+	margin-left: 0px;
+	margin-top: 0px;
+	display:none;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	opacity:0.7;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	padding: 15px;
+}
+
+#canvasLoader { 
+	position:absolute;
+	left: 0%;
+	top: 0%;
+}
+
+#spinner span {
+	position:absolute;
+	top: 50%;
+	left: 0%;
+	width: 100%;
+	color:#333;
+	font:0.9em Arial, Verdana, sans;
+	font-weight: bold;
+	text-align:center;
+	line-height:0.6em;
+	margin-top:-0.3em;
+}
+
+#capitolLabels {
+	position: absolute;
+	pointer-events: none;
+	max-width: 740px;
+	width: 100%;
+	height: 520px;
+	top: 5px;
+	left: 0px;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 90%;
+}
+
+/*.txtBkgd {
+	width: 140px;
+	height: 40px;
+	background-color: white;
+	opacity:0.7;
+}*/
+
+.txtHouse {
+	position: absolute;
+	top: 14%;
+	left: 10%;
+}
+
+.txtSenate {
+	position: absolute;
+	top: 5%;
+	left: 83%;
+	width: 50px;
+}
+
+.txtLoC {
+	position: absolute;
+	top: 2%;
+	left: 50%;
+}
+
+.txtSC {
+	position: absolute;
+	top: 35%;
+	left: 80%;
+	width: 60px;
+}
+
+.txtHall {
+	position: absolute;
+	top: 41%;
+	left: 53%;
+	width: 60px;
+	text-align: center;
+}
+
+.txtSoldiers {
+	position: absolute;
+	top: 52%;
+	left: 85%;
+	width: 120px;
+	text-align: center;
+}
+
+.spinLabel {
+	width: 100%;
+	max-width: 740px;
+}
+
+.spinIcon {
+	height: 12px;
+	margin-top: 5px;
+	margin-right: 7px;
+}
+
+.center{
+          height: 25px; 
+          width: 200px;
+          display: block;
+          margin:0 auto;
+        }
+
+.txtcenter { text-align: center;}
+
+.source {
+  
+    float: left;
+    width:100%;
+    max-width:740px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 11px;
+    line-height:12px;
+    z-index: -2;
+}

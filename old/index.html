@@ -1,0 +1,58 @@
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+<title>The 1814 Burning of the Capitol</title> 
+<head>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="reel.js"></script>
+    <link type="text/css" rel="stylesheet" href="capitol.css" charset="utf-8">
+</head>
+<body>
+<p class="label txtcenter ">Rooms in <span style="color: darkred; font-weight: bold;"> RED </span>were destroyed by fire. The <span style="color: #628ACB; font-weight: bold;"> BLUE </span>arrows show the British troops' path. </p>
+
+<div id="spinLabel"><div class="center">
+    <img src="images/arrow.png" class="spinIcon"> 
+    <span class="textcenter"> <i>Drag to spin the building</i> </span>
+</div></div>
+
+<div id="main" class="main">
+        
+    <img src="images/cap-01.jpg" width="100%" max-width="740px" height="520px"
+        class="reel"
+        id="image"
+        data-images="images/cap-##.jpg"
+        data-footage="33"
+        data-cw="true"
+        data-orbital="1"
+        data-entry="1"
+        data-cursor="col-resize"
+        data-opening=".98"
+        data-revolution="500"
+        data-responsive="true"> 
+
+    <div id="capitolLabels">
+    <p class="txtHouse">House of Representatives </br>chamber</p>
+    <p class="txtSenate">Senate chamber</p>
+    <p class="txtLoC">Library of Congress</p>
+    <p class="txtSC">Supreme Court</p>
+    <p class="txtHall">Temporary wooden walkway</p>
+    <p class="txtSoldiers">British soldiers advance to the Capitol from Maryland Avenue NE</p>
+    </div>
+
+</div>
+
+<p class="source">Capitol model based from the sketches and blueprints of architect Benjamin Henry Latrobe in 1808 and by a painting created by George Munger shortly after the fire in 1814. Sources: Architect of the Capitol; Library of Congress; National Archives; U.S. House; U.S. Navy </p>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    $('#capitolLabels').hide().delay(1500).fadeIn();
+
+    $("#main").mousedown(function() {
+        $('#capitolLabels').fadeOut();
+    });
+        
+});
+
+</script>
+
+</body>
