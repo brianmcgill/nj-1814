@@ -154,10 +154,8 @@ a:hover, footer a:hover {  color: #ED1C24; }
 .art-container {
   position: relative;
   max-width: 1120px; /*can be adjusted down to 740px */
-  margin: 10px auto;
+  margin: 10px auto 0;
   padding: 0 5px;
-  background-color: #eee; /*remove*/
-  height: 300px; /*remove*/
 }
 
 .note {
@@ -211,12 +209,109 @@ a:hover, footer a:hover {  color: #ED1C24; }
 .imgLg { display: inherit; }
 .imgMd {  display: none; }
 
-img { max-width: 100%; max-height: 100%; }
+.mainImg img { max-width: 100%; max-height: 100%; }
 
 .caption {
   font-style: italic;
   text-align: right;
 }
+
+
+
+
+
+
+/*YOUR CSS*/
+
+.map img { width: 100%; }
+
+.chart { 
+  position: relative;
+  float: right;
+  width: 170px;
+  margin: 0 0 10px 20px;
+ }
+
+.red {color: #ed1c24; font-weight: bold;}
+.blue {color: #628ACB; font-weight: bold;}
+
+.main { position: relative; width:100%; }
+
+.labelDiv {
+  position: absolute;
+  pointer-events: none;
+  max-width: 990px;
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
+  top: 5px;
+  left: 0px;
+  font-size: 16px;
+  line-height: 95%;
+  z-index: 100;
+}
+
+
+.txtHouse {
+  position: absolute;
+  top: 12%;
+  left: 10%;
+}
+
+.txtSenate {
+  position: absolute;
+  top: 5%;
+  left: 83%;
+  width: 50px;
+}
+
+.txtLoC {
+  position: absolute;
+  top: 3%;
+  left: 48%;
+}
+
+.txtSC {
+  position: absolute;
+  top: 36%;
+  left: 80%;
+  width: 60px;
+}
+
+.txtHall {
+  position: absolute;
+  top: 42%;
+  left: 53%;
+  width: 60px;
+  text-align: center;
+}
+
+.txtSoldiers {
+  position: absolute;
+  top: 52%;
+  left: 88%;
+  width: 120px;
+  text-align: center;
+}
+
+.spinLabel {
+  width: 100%;
+  max-width: 740px;
+}
+
+.spinIcon {
+  height: 12px;
+  margin-right: 7px;
+}
+
+.center{
+          height: 25px; 
+          width: 230px;
+          display: block;
+          margin:0 auto;
+        }
+
+.txtcenter { text-align: center;}
 
 @media only screen and (max-width: 1120px) { 
 
@@ -247,23 +342,15 @@ img { max-width: 100%; max-height: 100%; }
   .imgMd { display: inline; }
   .caption { font-size: 12px; }
 
+  .labelDiv { font-size: 12px; }
+  .txtHouse { top: 5%; left: 5%; }
+  .txtSenate { left: 85%;  }
+  .txtLoC {display: none; }
+  .txtSoldiers { top: 65%; left: 65%; }
+
 
 }
 
-
-
-
-
-/*YOUR CSS*/
-
-.map img { width: 100%; }
-
-.chart { 
-  position: relative;
-  float: right;
-  width: 170px;
-  margin: 0 0 10px 20px;
- }
 
 
 
