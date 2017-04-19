@@ -248,7 +248,7 @@ a:hover, footer a:hover {  color: #ED1C24; }
   left: 0px;
   font-size: 16px;
   line-height: 95%;
-  z-index: 100;
+  z-index: 3;
 }
 
 
